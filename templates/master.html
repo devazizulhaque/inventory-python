@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Azizul Haque-{% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Travello template project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include "includes/css.html" %}
+
+    {% block style %}{% endblock  %}
+</head>
+<body>
+
+    <div class="super_container">
+<!-- Navbar -->
+{% include "includes/nav.html" %}
+
+{% block content %}
+
+{% endblock %}
+
+<!-- Footer -->
+{% include "includes/footer.html" %}
+</div>
+
+<!-- Bootstrap JS -->
+{% include "includes/js.html" %}
+
+{% block script %}{% endblock %}
+</body>
+</html>
